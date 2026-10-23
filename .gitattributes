@@ -29,7 +29,8 @@
 
 # Directories
 #.git export-ignore
-#.github export-ignore
+/.github export-ignore
+/qa export-ignore
 .husky export-ignore
 .vscode export-ignore
 
