@@ -48,6 +48,9 @@ Hybrid Serializable Closure utilizes code from Laravel.
 
 Repository: https://github.com/laravel/serializable-closure
 
-License: MIT License - <https://opensource.org/licenses/MIT>
+License: MIT License, included in full in [LICENSE-laravel.md](LICENSE-laravel.md).
 
 Copyright (c) Taylor Otwell
+
+The test suite in `qa/` is ported from the same repository, under the same
+license.

@@ -7,7 +7,7 @@ class ClosureStream {
     /**
      * The stream protocol.
      */
-    const string STREAM_PROTO = 'hybrid_core-serializable-closure';
+    const STREAM_PROTO = 'hybrid-serializable-closure';
 
     /**
      * Checks if this stream is registered.

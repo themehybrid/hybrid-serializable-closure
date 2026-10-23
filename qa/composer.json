@@ -1,0 +1,41 @@
+{
+	"name": "themehybrid/hybrid-serializable-closure-qa",
+	"description": "Test suite for hybrid-serializable-closure, ported from laravel/serializable-closure. Its own Composer project, so Pest's PHP 8.4 requirement never reaches the package's PHP 8.2 floor.",
+	"type": "project",
+	"license": "GPL-2.0-or-later",
+	"repositories": [
+		{
+			"type": "path",
+			"url": "..",
+			"options": {
+				"symlink": true,
+				"versions": {
+					"themehybrid/hybrid-serializable-closure": "1.0.x-dev"
+				}
+			}
+		}
+	],
+	"require-dev": {
+		"illuminate/support": "^12.0",
+		"nesbot/carbon": "^3.0",
+		"pestphp/pest": "^5.0",
+		"themehybrid/hybrid-serializable-closure": "1.0.x-dev"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		},
+		"process-timeout": 0,
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"scripts": {
+		"test": "pest"
+	}
+}
